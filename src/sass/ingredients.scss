@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+// Default
+html,body{
+    height: 100%;
+}
+
+html{
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","Segoe UI","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+}
+
+.ingMain{
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    color: #707070;
+    padding-top: 120px;
+    &__title{
+        font-size: 1.6rem;
+        color: #707070;
+        width: 206px;
+        margin:0 auto;
+        border-bottom: 1px #707070 solid;
+        font-weight: normal;
+    }
+    &__box{
+        display: flex;
+        justify-content: center;
+        margin: 0 10px;
+        position: relative;
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+        &__list{
+            &__content{
+                display: flex;
+                margin-top: 20px;
+                justify-content: space-between;
+                width: 306px;
+                font-size: 1.4rem;
+            }
+        }
+        &__form{
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            &__list{
+                list-style: none;
+                &__radio{
+                    div{
+                        width: 22px;
+                        height: 22px;
+                        margin-top: 20px;
+                        border: 0.5px solid #707070;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                    input{
+                        display: none;
+                    }
+                    input:checked + div{
+                        background: url("../img/checked.svg") no-repeat center;
+                    }
+                }
+            }
+        }
+    }
+    &__box:after{
+        content: "";
+        position: absolute;
+        width: 206px;
+        height: 1px;
+        background: #707070;
+        bottom: 0;
+    }
+    &__txt{
+        font-size: 1.6rem;
+    }
+    &__next{
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 235px;
+        height: 68px;
+        border: 1px solid #707070;
+        border-radius: 20px;
+        text-align: center;
+        padding-top: 15px;
+        background: #FFF3B1;
+        box-shadow:0px 3px 3px 0px #333;
+    }
+    &__next:link,&__next:visited{
+        color: #707070;
+        text-decoration: none;
+        font-size: 3.0rem;
+    }
+
+}
+input[type="checkbox"]:checked + label {
+    background-color: red;
+}

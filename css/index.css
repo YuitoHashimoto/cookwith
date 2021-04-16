@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFE65A;
+  font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","Segoe UI","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+}
+
+main {
+  margin: 0 auto;
+  height: 812px;
+  width: 351px;
+  margin-top: 182px;
+}
+
+main h1 {
+  margin-top: 182px;
+  margin-bottom: 232px;
+}
+
+main a {
+  display: block;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3.0rem;
+  width: 235px;
+  height: 65px;
+  padding-top: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+main a:link, main a:visited {
+  color: #707070;
+  text-decoration: none;
+}

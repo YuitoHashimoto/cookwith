@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+// Default
+html,body{
+    height: 100%;
+}
+
+html{
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+body{
+    background-color: #FFE65A;
+	font-family: 'Noto Sans JP',-apple-system, BlinkMacSystemFont,"Helvetica Neue","Segoe UI","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+}
+
+.head{
+    text-align: center;
+    color: #707070;
+    &__title{
+        font-weight: normal;
+        margin-top: 63px;
+        margin-bottom: 72px;
+        position: relative;
+        &__arrow{
+            width: 33px;
+            height: 31px;
+            background: url("../img/arrow.svg");
+            position: absolute;
+
+            left: 20px;
+        }
+    }
+}
+
+.main{
+    text-align: center;
+    color: #707070;
+    &__home{
+        &__firstList{
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            p{
+                input{
+                    padding-left: 10px;
+                    color: #707070;
+                }
+            }
+            p::after{
+                content: "家";
+                position: absolute;
+                margin-left: 5px;
+            }
+        }
+        &__list{
+            list-style: none;
+            p{
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 2.0rem;
+                margin-top: 35px;
+                margin-bottom: 10px;
+            }
+            input{
+                width: 246px;
+                height: 30px;
+                padding-left: 10px;
+                border: 0.5px #707070 solid;
+                color: #707070;
+                border-radius: 10px;
+                background: #fff;
+                font-size: 1.8rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.mainPass{
+    margin-top: 193px;
+    text-align: center;
+    &__form{
+        color: #707070;
+        &__subtitle{
+            font-size: 2.0rem;
+            margin-bottom: 10px;
+        }
+        .confirm{
+            margin-top: 30px;
+        }
+        #password,#conPass{
+            text-align: center;
+            width: 285px;
+            height: 35px;
+            background: #fff;
+            border: 0.5px solid #707070;
+            border-radius: 10px;
+            font-size: 1.6rem;
+        }
+        &__about{
+            margin-top: 60px;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.compMain{
+    text-align: center;
+    &__about{
+        font-size: 1.8rem;
+        color: #707070;
+        margin-top: 180px;
+    }
+}
+
+.nextButton{
+    box-shadow:0px 3px 5px 1px #707070;
+    text-align: center;
+    user-select: none;
+    display: inline-block;
+    font-size: 21px;
+    color: #707070;
+    width: 170px;
+    height: 48px;
+    border: solid 0.5px #ccb3b3;
+    border-radius: 20px;
+    background: #fff;
+    padding-top: 9px;
+    margin-top: 146px;
+}
+
+.family{
+    margin-top: 120px;
+}
+
+.home{
+    margin-top: 260px;
+}

@@ -1,0 +1,197 @@
+@charset "UTF-8";
+html, body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","Segoe UI","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+}
+
+.recipeMain {
+  color: #707070;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding-top: 122px;
+  padding-bottom: 104px;
+}
+
+.recipeMain__head {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.recipeMain__head__img {
+  width: 125px;
+  height: 125px;
+  background: url("../img/recipeTop.svg") no-repeat center;
+  border: 1px #707070 solid;
+  border-radius: 10px;
+  box-shadow: 0px 3px 3px 0px #333;
+}
+
+.recipeMain__head__content__title {
+  font-size: 1.6rem;
+  font-weight: normal;
+  border-bottom: 1px solid #707070;
+}
+
+.recipeMain__head__content__about {
+  list-style-type: none;
+  padding-left: 0px;
+  width: 200px;
+}
+
+.recipeMain__head__content__about__txt, .recipeMain__head__content__about__button {
+  width: 100%;
+  text-align: left;
+  font-size: 1.4rem;
+  position: relative;
+  margin: 15px 0;
+}
+
+.recipeMain__head__content__about__txt button, .recipeMain__head__content__about__button button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  outline: none;
+  width: 66px;
+  height: 21px;
+  border-radius: 10px;
+  background: #FFF3B1;
+  border: none;
+  color: #707070;
+  font-size: 1.2rem;
+}
+
+.recipeMain__head__content__about__txt > p::after {
+  content: "かんたん";
+  position: absolute;
+  text-align: center;
+  font-size: 1.2rem;
+  right: 0;
+  width: 66px;
+  height: 21px;
+  background: #FFF3B1;
+  border-radius: 10px;
+}
+
+.recipeMain__main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.recipeMain__main__about {
+  width: 174px;
+}
+
+.recipeMain__main__about h2 {
+  font-weight: normal;
+  font-size: 1.6rem;
+  border-bottom: 0.5px solid #707070;
+}
+
+.recipeMain__main__about h2 span {
+  font-size: 1.2rem;
+}
+
+.recipeMain__main__about__list {
+  list-style: none;
+  font-size: 1.4rem;
+  padding-left: 0px;
+}
+
+.recipeMain__main__about__list__txt {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.recipeMain__main__rank {
+  width: 150px;
+}
+
+.recipeMain__main__rank__title {
+  font-weight: normal;
+  font-size: 1.6rem;
+  border-bottom: 0.5px solid #FFE65A;
+}
+
+.recipeMain__main__rank__box {
+  display: block;
+  height: 56px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  border-bottom: 0.5px solid #707070;
+}
+
+.recipeMain__main__rank__box__txt h3 {
+  font-size: 1.0rem;
+  color: #FFE65A;
+}
+
+.recipeMain__main__rank__box__txt p {
+  font-size: 0.8rem;
+  line-height: 30px;
+}
+
+.recipeMain__main__rank__box:link, .recipeMain__main__rank__box:visited {
+  color: #707070;
+  text-decoration: none;
+}
+
+.recipeMain__main__rank__box::before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  display: block;
+  background: url("../img/curryRank.svg") no-repeat center;
+  border-radius: 10px;
+  border: 0.5px solid #707070;
+  box-shadow: 0px 3px 3px 0px #333;
+}
+
+.recipeMain__video__title {
+  width: 170px;
+  font-weight: normal;
+  color: #707070;
+  border-bottom: 0.5px solid #707070;
+  margin: 30px 10px 15px 10px;
+}
+
+.recipeMain__video__source {
+  margin: 0 auto;
+  border: 0.5px solid #707070;
+  border-radius: 10px;
+  width: 326px;
+  height: 166px;
+  background: url("../img/video.svg") no-repeat center;
+  background-color: #FFF3B1;
+  margin-bottom: 40px;
+}
+
+.recipeMain__make {
+  display: block;
+  margin: 0 auto;
+  width: 235px;
+  height: 68px;
+  border: 1px solid #707070;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 20px;
+  background: #FFF3B1;
+  box-shadow: 0px 3px 3px 0px #333;
+}
+
+.recipeMain__make:link, .recipeMain__make:visited {
+  color: #707070;
+  text-decoration: none;
+  font-size: 3.0rem;
+}

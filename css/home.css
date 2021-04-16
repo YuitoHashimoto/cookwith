@@ -1,0 +1,69 @@
+html, body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","Segoe UI","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+}
+
+.homeMain {
+  text-align: center;
+  position: relative;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #707070;
+  box-sizing: border-box;
+  padding-top: 92px;
+  padding-bottom: 74px;
+}
+
+.homeMain__box {
+  margin-top: 58px;
+}
+
+.homeMain__box__title {
+  font-weight: normal;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.homeMain__box__content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.homeMain__box__content__menu {
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 144px;
+  height: 144px;
+  border-radius: 10px;
+  border: 1px solid #707070;
+  background: tomato;
+}
+
+.homeMain__box__content__menu p {
+  position: absolute;
+  border-top: 1px solid #707070;
+  padding-top: 9px;
+  bottom: 0;
+  width: 100%;
+  height: 36px;
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+}
+
+.homeMain__box__content__menu:link, .homeMain__box__content__menu:visited {
+  text-decoration: none;
+  color: #707070;
+}
+
+.homeMain__box__content__menu:nth-child(2) {
+  margin-left: 30px;
+}
